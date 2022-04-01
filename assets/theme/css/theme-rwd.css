@@ -1,0 +1,181 @@
+/*========== min ==========*/
+@media (min-width:768px) {
+    .visible-mobile {
+        display: none !important;
+    }
+    .slide-out-wrap {
+        --margin-side: calc(100% - 750px);
+        --right-side: calc(var(--margin-side) / 2);
+        margin-left: var(--right-side);
+    }
+    
+}
+
+@media (min-width:992px) {
+    #footerMenu {
+        display: none;
+    }
+    .visible-device {
+        display: none !important;
+    }
+    .banner-content .banner-box {
+        order: 2;
+        width: 40%;
+    }
+    .slide-out-wrap {
+        --margin-side: calc(100% - 970px);
+        --right-side: calc(var(--margin-side) / 2);
+        margin-left: var(--right-side);
+    }
+}
+
+@media (min-width:1200px) {
+    .slide-out-wrap {
+        --margin-side: calc(100% - 1170px);
+        --right-side: calc(var(--margin-side) / 2);
+        margin-left: var(--right-side);
+    }
+    .home .sc-inner.more-top {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:991px) {
+    .hidden-device {
+        display: none !important;
+    }
+    .banner-content {
+        display: block;
+    }
+    .logo-img {
+        width: 60%;
+        max-width: 248px;
+    }
+    .form-img-box {
+        min-width: 30% !important;
+    }
+    ul.pagination-list {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .bg-banner {
+        position: unset;
+        transform: unset;
+        width: 100%;
+    }
+    .bg-banner::after {
+        background: unset;
+    }
+    .home .bg-object.bg-object-moon {
+        top: unset;
+    }
+    .footer {
+        padding-top: 0;
+    }
+    #page.page {
+        padding-bottom: 100px;
+    }
+}
+
+
+@media (max-width:767px) {
+    .container-fluid-mobile {
+        margin: 0;
+        padding: 0;
+    }
+    .hidden-mobile {
+        display: none !important;
+    }
+    .sc-inner {
+        padding: 40px 0;
+    }
+    .ct-br-m { display: block; }
+    h1, .heading-1, 
+    h2, .heading-2, 
+    h3, .heading-3,
+    h4, .heading-4,
+    h5, .heading-5,
+    h6, .heading-6 {
+        line-height: 1; 
+    }
+    h3, .heading-h3 {
+        font-size: 24px;
+    }
+    .banner-content .font-logo {
+        font-size: 60px;
+    }
+    .banner-content .heading-h1 {
+        font-size: 40px;
+    }
+    .ads-slide .item {
+        display: block;
+        margin: 15px 0;
+    }
+    .game-slide .item {
+        margin: 0 10px;
+    }
+    .slide-out-wrap {
+        margin: 60px 30px 0;
+    }
+    .bank-wrap {
+        display: block;
+    }
+    .bank-wrap .detail {
+        width: 100%;
+        text-align: center;
+    }
+    .bank-wrap .bank-icon-wrap {
+        width: 100%;
+    }
+    .bank-wrap .bank-icon-wrap .icon .img-item {
+        width: calc(25% - 10px);
+    }
+    .bg-object-01 {
+        width: 80%;
+        left: -20%;
+        top: 28%;
+    }
+    .bg-object-02 {
+        width: 40%;
+        top: 50%;
+    }
+    .bg-object-03 {
+        width: 43%;
+        top: 14%;
+        left: -16%;
+    }
+    .game-slide .slick-list{padding:0 10% 0 0 !important;}
+    .banner-box .form-box-wrap {
+        padding: 20px;
+    }
+    .table-detail .table-row:nth-child(2n) {
+        background-color: #f4f4f4;
+    }
+    .pagination .select {
+        padding: 0 20px;
+        height: 48px;
+        background-color: #fff;
+        border: 2px solid;
+        text-align: center;
+    }
+    .pagination .select-wrap {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    .pagination .select-wrap::after {
+        right: 40px;
+    }
+    .bg-object.bg-object-moon {
+        width: 40%;
+        right: -10%;
+    }
+    .footer-train lottie-player {
+        width: 300%;
+        margin-left: -150%;
+    }
+    
+}
+
+@media (max-width:375px) {
+   
+}

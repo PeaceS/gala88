@@ -1,0 +1,88 @@
+
+.promotion-wrap {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    color: #000;
+}
+.promotion-wrap .accordion-wrap.promotion-box:nth-child(5) {
+    margin-bottom: 90px;
+}
+.accordion-wrap.promotion-box  {
+    position: relative;
+    margin-bottom: 60px;
+}
+.accordion-wrap.promotion-box::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    background-color: #2A00E4;
+    border-radius: 10px;
+}
+.promotion-box .heading {
+    color: #FB01C2;
+    font-weight: normal;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 36px;
+    margin: 20px 0 0;
+    padding-inline-end: 60px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.promotion-box .accordion-heading {
+    display: block;
+    padding: 20px 0;
+}
+.promotion-box .accordion-content {
+    padding-left: 30px;
+}
+.promotion-box .accordion-content .date {
+    margin-bottom: 10px;
+}
+.accordion-wrap.promotion-box .accordion-heading::after {
+    bottom: 15px;
+    top: unset;
+    transform: unset;
+    font-size: 36px;
+    font-weight: bold;
+    right: 0;
+}
+.accordion-wrap.promotion-box .accordion-content {
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+.share-btn {
+    position: absolute;
+    right: 0;
+    display: flex;
+    top: 100%;
+    padding-top: 10px;
+    align-items: center;
+    transition: all 0.5s;
+}
+.share-btn .social-icon img{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+.share-btn.active {
+    top: calc(100% - 70px);
+    transition: all 0.5s;
+}
+
+@media (max-width:767px) {
+    .promotion-wrap {
+        padding: 20px 15px;
+    }
+    .promotion-box .heading {
+        font-size: 20px;
+    }
+    .share-btn .social-icon img {
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+    }
+}

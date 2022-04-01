@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/icomoon.eot');
+    src: url('../font/icomoon.eot#iefix') format('embedded-opentype'),
+         url('../font/icomoon.ttf') format('truetype'),
+         url('../font/icomoon.woff') format('woff'),
+         url('../font/icomoon#icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ic {
+    font-family: 'iconfont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+    font-size: 28px;
+}
+
+.ic-note:before {
+  content: "\e900";
+}
+.ic-drop:before {
+  content: "\e901";
+}
+.ic-game:before {
+  content: "\e902";
+}
+.ic-suggest:before {
+  content: "\e903";
+}
+.ic-withdraw:before {
+  content: "\e904";
+}
+.ic-deposit:before {
+  content: "\e905";
+}
+.ic-profile:before {
+  content: "\e906";
+}
+.ic-password:before {
+  content: "\e907";
+}
+.ic-checklist:before {
+  content: "\e908";
+}
+.ic-calendar:before {
+  content: "\e909";
+}
+.ic-account:before {
+  content: "\e90a";
+}
+.ic-hamburger:before {
+  content: "\e90b";
+}
+.ic-close:before {
+  content: "\e90c";
+}
+.ic-down:before {
+  content: "\e90d";
+}
+.ic-arrow-left:before {
+  content: "\e90e";
+}
+.ic-up:before {
+  content: "\e90f";
+}
+.ic-arrow-right:before {
+  content: "\e910";
+}
+.ic-deposit_dark:before {
+  content: "\e911";
+}
+.ic-withdraw_dark:before {
+  content: "\e912";
+}
+.ic-copy:before {
+  content: "\e913";
+}
+.ic-left:before {
+  content: "\e914";
+}
+.ic-right:before {
+  content: "\e915";
+}
+.ic-check:before {
+  content: "\e916";
+}
+

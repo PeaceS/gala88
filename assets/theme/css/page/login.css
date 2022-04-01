@@ -1,0 +1,65 @@
+#page.page.form-box-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-box {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.login-box .login-form {
+    background: #fff;
+    padding: 30px 40px;
+    font-weight: 500;
+}
+.login-box.forget-password .login-form{
+    max-width: 100%;
+    width: 100%;
+}
+.form-img-box {
+    min-width: 330px;
+    display: flex;
+    background: linear-gradient(190deg, #060025 0%, #6a0070 81%);
+    position: relative;
+    align-items: end;
+    order: 2;
+}
+.form-img-wrap .heading {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+.form-img-box img {
+    object-fit: contain;
+}
+.login-form .btn {
+    font-weight: bold;
+}
+
+@media (max-width:767px) {
+    #page.page.form-box-page {
+        display: block;
+    }
+    .container-xs {
+        max-width: 100%;
+    }
+    .login-box {
+        border-radius: 0;
+        display: block;
+    }
+    .login-box .login-form {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .form-img-box {
+        width: 100%;
+        max-width: 100%;
+        background: unset;
+    }
+}

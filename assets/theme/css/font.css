@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'pilot';
+    src: url('../font/pilotcommand1_2.eot');
+    src: url('../font/pilotcommand1_2.eot?#iefix') format('embedded-opentype'),
+         url('../font/pilotcommand1_2.woff2') format('woff2'),
+         url('../font/pilotcommand1_2.woff') format('woff'),
+         url('../font/pilotcommand1_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanit';
+    src: url('../font/kanit-bold.eot');
+    src: url('../font/kanit-bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/kanit-bold.woff2') format('woff2'),
+         url('../font/kanit-bold.woff') format('woff'),
+         url('../font/kanit-bold.ttf') format('truetype');
+    font-weight:bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanit';
+    src: url('../font/kanit-light.eot');
+    src: url('../font/kanit-light.eot?#iefix') format('embedded-opentype'),
+         url('../font/kanit-light.woff2') format('woff2'),
+         url('../font/kanit-light.woff') format('woff'),
+         url('../font/kanit-light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kanit';
+    src: url('../font/kanit-medium.eot');
+    src: url('../font/kanit-medium.eot?#iefix') format('embedded-opentype'),
+         url('../font/kanit-medium.woff2') format('woff2'),
+         url('../font/kanit-medium.woff') format('woff'),
+         url('../font/kanit-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

@@ -1,0 +1,144 @@
+.deposit-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 40px;
+}
+.deposit-box .bank-name {
+    color: #FB01C2;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.deposit-box .bank-detail {
+    color: #0A092D;
+    font-size: 32px;
+}
+.deposit-box .bank-detail .detail.more-bt {
+    margin-bottom: 5px;
+}
+.deposit-box .bank-detail .title {
+    color: #888888;
+    font-size: 20px;
+}
+.deposit-box .copy-btn-wrap {
+    border: 2px solid #FB01C2;
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FB01C2;
+    text-align: center;
+    font-weight: bold;
+}
+.deposit-box .copy-btn-wrap .icon .ic {
+    font-size: 90px;
+    line-height: 1;
+}
+.table-wrap {
+    background: #fff;
+    color: #0A092D;
+    padding: 40px;
+    border-radius: 20px;
+}
+.table-wrap .table-head {
+    color: #888;
+    margin-bottom: 20px;
+}
+.table-wrap .table-detail .row{
+    margin-bottom: 12px;
+}
+.btn-deposit {
+    font-weight: bold;
+    padding: 0 80px;
+}
+.bank-list img {
+    margin-bottom: 15px;
+}
+.withdraw-box {
+    background: #2A00E4;
+    padding: 40px;
+    border-radius: 20px;
+}
+.withdraw-box .title {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.withdraw-box .input,
+.withdraw-box .select-wrap select {
+    height: 50px;
+}
+.withdraw-box .btn-pink {
+    width: auto;
+    max-width: 100%;
+    padding: 0 100px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+@media (max-width:991px) {
+    .deposit-box .bank-detail {
+        font-size: 28px;
+    }
+    .deposit-box {
+        padding: 20px;
+    }
+    .deposit-box .copy-btn-wrap {
+        width: 130px;
+        height: 130px;
+    }
+    .table-wrap {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .deposit-box .bank-name {
+        font-size: 24px;
+        text-align: center;
+    }
+    .bank-img {
+        width: 50%;
+        margin: 0 auto 15px;
+    }
+    .deposit-box .bank-detail {
+        font-size: 24px;
+    }
+    .deposit-box .copy-btn-wrap {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .copy-btn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .deposit-box .copy-btn-wrap .icon .ic {
+        font-size: 42px;
+        color: #FB01C2 !important;
+    }
+    .deposit-box .copy-btn-wrap .text {
+        display: flex;
+        align-items: center;
+    }
+    .btn-deposit {
+        width: 100%;
+    }
+    .row-mb {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    .row-mb .total,
+    .row-mb .date {
+        font-size: 12px;
+    }
+    .withdraw-box .btn-pink {
+        width: 100%;
+        padding: 0;
+    }
+}
