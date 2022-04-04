@@ -41,6 +41,20 @@ function is_IE() {
 });
 
 /* MatchHeight */
+$(function() {
+    if($(".why-gala-wrap").length){
+        $('.why-gala-wrap').each(function() {
+            $(this).find('.matchHeight').matchHeight({
+                byRow: false,
+                property: 'height',
+                target: null,
+                remove: false
+            });
+        });
+    }
+});
+
+
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $(".credit-condition-wrap").click(function(){
         $(this).children('.content').slideToggle('slow', function() {
@@ -48,6 +62,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
           });
     });
 }
+
 
 $(function(){ 
     // if($(".annouce-slide").length){
@@ -106,10 +121,10 @@ $(function(){
     });
 
     $(".account-menu-btn").click(function(e) {
-        if ($(".account-menu-wrap").hasClass("show")) {
-            $(".account-menu-wrap").removeClass("show")
+        if ($(".header-popup .account-menu-wrap").hasClass("show")) {
+            $(".header-popup .account-menu-wrap").removeClass("show")
           } else {
-            $(".account-menu-wrap").addClass("show")
+            $(".header-popup .account-menu-wrap").addClass("show")
           }
     });
 

@@ -958,10 +958,6 @@ input[required]+label:after {
     transition: all 3s;
     border: 2px solid #2f1145;
 }
-.ads-slide .item:hover img{
-    transform: scale(1.1);
-    transition: all 3s;
-}
 /* .ads-slide .item::before {
     content: '';
     position: absolute;

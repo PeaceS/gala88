@@ -107,8 +107,9 @@
     margin-top: 20px;
 }
 .warning-box .img {
-    padding: 5px;
-} 
+    max-width: 100px;
+    margin: auto;
+}
 .warning-box .item {
     margin-bottom: 20px;
 }

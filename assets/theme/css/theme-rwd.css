@@ -89,6 +89,9 @@
 
 
 @media (max-width:767px) {
+    .home .sc-inner {
+        padding: 40px 0;
+    }
     .container-fluid-mobile {
         margin: 0;
         padding: 0;
@@ -157,6 +160,7 @@
     .game-slide .slick-list{padding:0 10% 0 0 !important;}
     .banner-box .form-box-wrap {
         padding: 20px;
+        margin-bottom: 20px;
     }
     .table-detail .table-row:nth-child(2n) {
         background-color: #f4f4f4;
@@ -183,7 +187,24 @@
         width: 300%;
         margin-left: -150%;
     }
-    
+    .banner-content .input{
+        height: 50px;
+        padding: 0 20px;
+    }
+    .banner-content .btn {
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .banner-content .action {
+        margin-top: 20px;
+    }
+    .banner-content .banner-text .btn {
+        margin-top: 20px;
+    }
+    .why-gala-wrap .desc {
+        min-height: 160px;
+    }
 }
 
 @media (max-width:375px) {

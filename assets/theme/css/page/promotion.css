@@ -85,4 +85,7 @@
         height: 30px;
         margin-left: 15px;
     }
+    .accordion-wrap.promotion-box .accordion-heading::after {
+        bottom: 0;
+    }
 }
