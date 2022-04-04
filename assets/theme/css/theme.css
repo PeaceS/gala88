@@ -1025,7 +1025,8 @@ a.arrow-btn:hover {
 }
 .line {
     display: inline-block;
-    width: 80px;
+    width: calc(100% - 200px);
+    max-width: 300px;
     height: 2px;
     margin: 0 10px;
     background: #2A00E4;
