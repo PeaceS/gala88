@@ -50,16 +50,14 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 }
 
 $(function(){ 
-    if($(".annouce-slide").length){
-        $('.annouce-slide').slick({
-            arrows: false,
-            dots: false,
-            infinite: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            speed: 900
-        });
-    }
+    // if($(".annouce-slide").length){
+    //     $('.annouce-slide').marquee({
+    //         duration: 5000,
+    //         gap: 50,
+    //         delayBeforeStart: 0,
+    //         direction: 'left',
+    //     });
+    // }
     if($(".ads-slide").length){
         $('.ads-slide').slick({
             arrows: false,
@@ -80,7 +78,7 @@ $(function(){
             autoplay: true,
             autoplaySpeed: 5000,
             speed: 900,
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
                 {
