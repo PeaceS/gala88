@@ -92,4 +92,7 @@
 .ic-check:before {
   content: "\e916";
 }
+.ic-warning:before {
+  content: "\e917";
+}
 

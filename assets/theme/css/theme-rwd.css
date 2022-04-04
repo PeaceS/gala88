@@ -39,6 +39,12 @@
         padding-top: 100px;
     }
 }
+@media (max-width:1199px) {
+    .header .header-bottom .header-menu .header-menu-item {
+        font-size: 20px;
+    }
+}
+
 
 @media (max-width:991px) {
     .hidden-device {
@@ -64,7 +70,7 @@
         width: 100%;
     }
     .bg-banner::after {
-        background: unset;
+        display: none;
     }
     .home .bg-object.bg-object-moon {
         top: unset;
@@ -74,6 +80,10 @@
     }
     #page.page {
         padding-bottom: 100px;
+    }
+   
+    #page.page.form-box-page + .footer + .footer-train{
+        display: none;
     }
 }
 

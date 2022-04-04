@@ -46,9 +46,11 @@
 .table-wrap .table-head {
     color: #888;
     margin-bottom: 20px;
+    font-weight: 500;
 }
+
 .table-wrap .table-detail .row{
-    margin-bottom: 12px;
+    padding: 10px 0;
 }
 .btn-deposit {
     font-weight: bold;
@@ -76,6 +78,39 @@
     padding: 0 100px;
     font-weight: bold;
     margin-top: 20px;
+}
+.warning-box {
+    background: #2A00E4;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+.warning-box .heading {
+    background: #FB01C2;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.warning-box .heading .ic {
+    color: #FAFF00;
+    font-weight: normal;
+    font-size: 40px;
+    vertical-align: sub;
+    margin-right: 10px;
+}
+.warning-box .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.warning-box .img {
+    padding: 5px;
+} 
+.warning-box .item {
+    margin-bottom: 20px;
 }
 @media (max-width:991px) {
     .deposit-box .bank-detail {
@@ -141,4 +176,18 @@
         width: 100%;
         padding: 0;
     }
+    .warning-box .heading .ic {
+        font-size: 60px;
+        vertical-align: bottom;
+    }
+    .warning-box {
+        padding: 40px 25px;
+    }
+    .warning-box .heading {
+        font-size: 24px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
 }
+

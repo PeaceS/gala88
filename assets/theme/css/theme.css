@@ -261,6 +261,9 @@ a[href^=mail] {
 a.link.pink { 
     color: #FB01C2; 
 }
+a.link.pink:hover {
+    color: #2A00E4; 
+}
 a.link.blue { 
     color: #2A00E4; 
 }
@@ -372,6 +375,11 @@ a.btn {
     background: #FB01C2;
     color: #fff;
 }
+.btn.btn-pink:hover {
+    background: #D000A1;
+    color: #fff;
+}
+
 .btn.btn-blue {
     background: #2A00E4;
     color: #fff;
@@ -407,8 +415,8 @@ a.btn {
     height: 80px;
     font-weight: 500;
     text-align: left;
-    padding: 20px;
-    color: #2A00E4;
+    padding: 0 20px;
+    color: #0A092D;
 }
 .select-wrap select:required:invalid {
     color: #bbb !important;
@@ -430,8 +438,9 @@ option[value=""][disabled] {
     border-radius: 10px;
     height: 80px;
     font-weight: 500;
-    color: #2A00E4;
+    color: #0A092D;
     padding: 20px;
+    caret-color: #2A00E4
 }
 .input.date + label {
     position: absolute;
@@ -476,7 +485,7 @@ input[type="checkbox"]:checked + .checkbox::after {
     font-family: 'iconfont';
     display: inline-block;
     background: #2A00E4;
-    color: #FB01C2;
+    color: #fff;
     text-align: center;
     line-height: 18px;
     font-weight: bold;
@@ -541,6 +550,9 @@ ul.pagination-list li.current {
 }
 
 /*========== Header - START ==========*/
+.pushy-content .account-menu-wrap {
+    display: none !important;
+}
 .header {
     position: fixed;
     width: 100%;
@@ -577,6 +589,7 @@ ul.pagination-list li.current {
     padding: 0 20px;
     line-height: 80px;
     font-weight: bold;
+    font-size: 24px;
 }
 .header .pushy-close {
     color: #fff !important;
@@ -602,7 +615,8 @@ ul.pagination-list li.current {
 .hamburger .bars:before {
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
+    border-radius: 3px;
     background-color: #fff;
     -webkit-transition-duration: 400ms;
     -o-transition-duration: 400ms;
@@ -629,7 +643,7 @@ ul.pagination-list li.current {
     transition-property: background-color, transform, -webkit-transform;
 }
 .hamburger .bars:before {
-    top: -6px;
+    top: -8px;
     right: 0;
     -webkit-transition-property: background-color, top;
     -o-transition-property: background-color, top;
@@ -639,7 +653,7 @@ ul.pagination-list li.current {
     transition-delay: 0s, .10s;
 }
 .hamburger .bars:after {
-    bottom: -6px;
+    bottom: -8px;
     -webkit-transition-property: background-color, bottom, -webkit-transform;
     transition-property: background-color, bottom, -webkit-transform;
     -o-transition-property: background-color, bottom, transform;
@@ -700,6 +714,13 @@ ul.pagination-list li.current {
 .account-menu-btn {
     cursor: pointer;
 }
+.account-menu-btn .ic {
+    font-size: 40px;
+    color: #FB01C2;
+}
+.account-menu-btn:hover .ic {
+    color: #FB01C2;
+}
 .account-menu-wrap.show {
     display: block;
 }
@@ -725,7 +746,10 @@ ul.pagination-list li.current {
     font-weight: bold;
 }
 .account-menu-wrap .btn {
+    font-size: 24px;
     width: 100%;
+    line-height: 60px;
+    font-weight: bold;
 }
 input[required]+label {
     color: #BBBBBB;
@@ -755,6 +779,7 @@ input[required]+label:after {
     padding: 20px 80px 20px 20px;
     position: relative;
     cursor: pointer;
+    font-weight: 500;
 }
 .accordion-wrap .accordion-heading::after{
     content: "\e90d";
@@ -851,7 +876,11 @@ input[required]+label:after {
 }
 
 .annouce-slide .annouce-item {
-    text-align: center;
+    width: 100vh;
+    display: inline-block;
+    animation-name: cYellow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .form .btn {
     width: 100%;
@@ -923,7 +952,7 @@ input[required]+label:after {
     margin: 15px;
     position: relative;
     width: 100%;
-    max-width: 640px;
+    max-width: 1024px;
     display: inline-block;
     transform: scale(1);
     transition: all 3s;
@@ -972,12 +1001,12 @@ input[required]+label:after {
     opacity: 1;
     color: #FB01C2;
 }
-.game-slide .slick-list{padding:0 25% 0 0 !important;}
+.game-slide .slick-list{padding:0 15% 0 0 !important;}
 .slick-dots li.slick-active button:before {
     content: '';
     width: 30px;
     height: 2px;
-    background: #FB01C2;
+    background: #2A00E4;
     top: calc(50% - 2px);
 }
 a.arrow-btn {
@@ -990,6 +1019,9 @@ a.arrow-btn {
     text-align: center;
     border-radius: 50%;
     line-height: 45px;
+}
+a.arrow-btn:hover {
+    background: #2400C1;
 }
 .line {
     display: inline-block;
@@ -1008,7 +1040,7 @@ a.arrow-btn {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 .game-slide .item .detail {
     height: 0;
@@ -1036,6 +1068,20 @@ a.arrow-btn {
     text-transform: uppercase;
     letter-spacing: 10px;
     font-size: 12px;
+}
+.game-slide .item .detail .catagaly,
+.game-slide .item .detail .title,
+.game-slide .item .detail .action .btn {
+    max-height: 0;
+    transition: max-height 0.5s, opacity 1s;
+    opacity: 0;
+}
+.game-slide .item:hover  .detail .catagaly,
+.game-slide .item:hover  .detail .title,
+.game-slide .item:hover  .detail .action .btn{
+    max-height: 60px;
+    opacity: 1;
+    transition: max-height 0.5s, opacity 1s;
 }
 .slide-out-wrap {
     margin-top: 60px;
@@ -1129,6 +1175,9 @@ a.arrow-btn {
 .footer-menu-wrap .footer-menu.center-menu .icon .ic {
     font-size: 75px;
 }
+#page.page.form-box-page + .footer {
+    padding-top: 0;
+}
 .cta-line-wrap {
     position: fixed;
     background: #2A00E4;
@@ -1153,6 +1202,16 @@ a.arrow-btn {
         margin-top: 0px;
     }
 }
+@keyframes cYellow {
+    0% {
+        color: #FAFF00;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
 @-webkit-keyframes fadeInUp {
     0% { opacity:0; -webkit-transform: translate3d(0,100%,0); transform: translate3d(0,100%,0);}
     66% { opacity:0; -webkit-transform: translate3d(0,100%,0); transform: translate3d(0,100%,0);}

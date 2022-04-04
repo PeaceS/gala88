@@ -70,11 +70,16 @@ a.btn.btn-menu {
     height: 100%;
     line-height: 1; 
 }
+a.btn.btn-menu:hover {
+    background-color: #D000A1;
+    color: #fff;
+}
 a.btn.btn-menu.active {
     background-color: #FB01C2;
     color: #ffffff;
 }
-a.btn.btn-menu.active .ic {
+a.btn.btn-menu.active .ic,
+a.btn.btn-menu:hover .ic  {
     background: unset;
     -webkit-background-clip: text;
     -webkit-text-fill-color: unset;
@@ -144,10 +149,12 @@ a.btn.btn-menu.active .ic {
     width: 40%;
     justify-content: space-between;
     bottom: 40px;
+    font-weight: 500;
 }
 .status-item {
     display: inline-block;
     width: 49%;
+    padding-bottom: 10px;
 }
 .status-list {
     width: 45%;
@@ -244,9 +251,7 @@ a.btn.btn-menu.active .ic {
 .monthly-summary {
     text-align: right;
 }
-.table-type-two .row-mb {
-    display: block;
-}
+
 .suggest-row-mb {
     display: flex;
     width: 100%;
@@ -261,9 +266,9 @@ a.btn.btn-menu.active .ic {
     font-size: 12px;
     text-align: right;
 }
-.summary-box .remark {
+/* .summary-box .remark {
     text-align: center;
-}
+} */
 .note-list .accordion-wrap:nth-child(2n) {
     background-color: #F4F4F4;
     border-radius: 20px;
@@ -300,10 +305,15 @@ input.input.date {
     border: 2px solid #2A00E4;
     border-radius: 20px;
 }
-.credit-condition-wrap .heading {
+.credit-condition-wrap .heading
+{
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 2px solid #2A00E4;
+    font-weight: 500;
+}
+.credit-condition-wrap .desc {
+    font-weight: 500;
 }
 .credit-condition-wrap .calculate-wrap {
     border-right: 2px solid #2A00E4;
@@ -338,6 +348,20 @@ input.input.date {
     width: calc(100% - 40px);
     margin: 30px auto;
 }
+.credit-condition-wrap .remark {
+    font-weight: 500;
+}
+.game-table .table-head {
+    border-bottom: 2px solid #2A00E4;
+    padding-bottom: 10px;
+}
+.note-list .accordion-content .head {
+    font-weight: 500;
+}
+.suggest-table .table-head{
+    border-bottom: 2px solid #2A00E4;
+    padding-bottom: 20px;
+}
 @media (max-width:1024px) {
     .credit-wrap .total {
         font-size: 36px;
@@ -348,6 +372,59 @@ input.input.date {
     .credit-wrap .total {
         font-size: 40px;
     }
+    .credit-condition-wrap {
+        width: 100%;
+    }
+    .credit-condition-wrap .calculate-wrap .calculate-item .detail {
+        font-size: 18px;
+    }
+    .credit-condition-wrap .calculate-wrap {
+        border-right: 0;
+        border-bottom: 2px solid #2A00E4;
+    }
+    .credit-condition-wrap .calculate-wrap .calculate-item {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .credit-condition-wrap .calculate-wrap .calculate-item .title {
+        font-size: 12px;
+    }
+    .credit-condition-wrap .calculate-wrap .calculate-item .detail {
+        font-size: 16px;
+    }
+    .credit-condition-wrap .content {
+        display: none;
+    }
+    .credit-condition-wrap .heading{
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        transition: all 0.5s;
+        position: relative;
+    }
+    .credit-condition-wrap .heading::after {
+        content: "\e90d";
+        font-family: 'iconfont';
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        line-height: 0;
+        right: 0;
+        color: #2A00E4;
+    }
+    .credit-condition-wrap.active .heading::after {
+        content: "\e90f";
+    }
+    .credit-condition-wrap.active .heading{
+        border-bottom: 2px solid #2A00E4;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        transition: all 0.5s;
+    }
+    .credit-condition-wrap .remark {
+        font-size: 12px;
+    }
+    
 }
 @media (max-width:767px) {
     .credit-wrap .total {
@@ -449,49 +526,11 @@ input.input.date {
     .note-list .accordion-content-item {
         border-left: 0;
     }
-    .credit-condition-wrap .calculate-wrap {
-        border-right: 0;
-        border-bottom: 2px solid #2A00E4;
+    .credit-condition-wrap {
+        width: calc(100% - 40px);
     }
-    .credit-condition-wrap .calculate-wrap .calculate-item {
-        display: block;
-        margin-bottom: 15px;
+    .suggest-table .row-mb {
+        display: block !important;
     }
-    .credit-condition-wrap .calculate-wrap .calculate-item .title {
-        font-size: 12px;
-    }
-    .credit-condition-wrap .calculate-wrap .calculate-item .detail {
-        font-size: 16px;
-    }
-    .credit-condition-wrap .content {
-        display: none;
-    }
-    .credit-condition-wrap .heading{
-        border-bottom: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        transition: all 0.5s;
-        position: relative;
-    }
-    .credit-condition-wrap .heading::after {
-        content: "\e90d";
-        font-family: 'iconfont';
-        font-size: 30px;
-        position: absolute;
-        top: 50%;
-        line-height: 0;
-        right: 0;
-        color: #2A00E4;
-    }
-    .credit-condition-wrap.active .heading::after {
-        content: "\e90f";
-    }
-    .credit-condition-wrap.active .heading{
-        border-bottom: 2px solid #2A00E4;
-        margin-bottom: 20px;
-        padding-bottom: 10px;
-        transition: all 0.5s;
-    }
-    
 }
 

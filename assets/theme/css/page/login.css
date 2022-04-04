@@ -13,6 +13,7 @@
     padding: 30px 40px;
     font-weight: 500;
 }
+
 .login-box.forget-password .login-form{
     max-width: 100%;
     width: 100%;
@@ -40,10 +41,17 @@
 .login-form .btn {
     font-weight: bold;
 }
+@media (min-width:768px) {
+    .login-box.forget-password .form-img-box {
+        display: none;
+    }
+}
+
 
 @media (max-width:767px) {
     #page.page.form-box-page {
         display: block;
+        padding-bottom: 0;
     }
     .container-xs {
         max-width: 100%;
@@ -61,5 +69,8 @@
         width: 100%;
         max-width: 100%;
         background: unset;
+    }
+    .login-box.forget-password .login-form {
+        border-radius: 20px;
     }
 }
